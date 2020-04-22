@@ -1,4 +1,4 @@
-# Recruitement
+# Recruitement (Réalisé avec VueCLI Vue Router et VueX
 
 ## Project setup
 ```
@@ -14,5 +14,6 @@ npm run serve
 ```
 Une section Admin a été rajouter afin de voir combien de fois 
 une combinaison TITRE + TEMPLATE est apparu 
+Une sauvegarde de ces données est fait en localHosy
 ```
 
