@@ -14,6 +14,6 @@ npm run serve
 ```
 Une section Admin a été rajouter afin de voir combien de fois 
 une combinaison TITRE + TEMPLATE est apparu 
-Une sauvegarde de ces données est fait en localHosy
+Une sauvegarde des données est faites sur le LocalHost
 ```
 
