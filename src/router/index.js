@@ -1,23 +1,38 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import templateOne from "@/views/templateOne"
+import templateTwo from "@/views/templateTwo"
+import templateThree from "@/views/templateThree"
+import admin from "@/views/admin"
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/tpl/1/title/:title',
+    name: '1',
+    component: templateOne
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/tpl/2/title/:title',
+    name: '2',
+    component: templateTwo
+  },
+  {
+    path: '/tpl/3/title/:title',
+    name: '3',
+    component: templateThree
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: admin
+  },
+  {
+    path: '/',
+    name: 'home',
+    redirect: to => {
+      return {path: "/tpl/" + Math.floor(Math.random() * (4 - 1) + 1) + "/title/" + Math.floor(Math.random() * (6 - 1) + 1)}
     }
   }
 ]

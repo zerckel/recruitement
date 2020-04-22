@@ -1,19 +1,18 @@
-# recruitement
+# Recruitement
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start Serve
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Fonctionnement
 ```
-npm run build
+Une section Admin a été rajouter afin de voir combien de fois 
+une combinaison TITRE + TEMPLATE est apparu 
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
